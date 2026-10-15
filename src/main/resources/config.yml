@@ -1,0 +1,32 @@
+# Язык сообщений плагина: "ru", "en" или "auto".
+# "auto" — для игрока берётся его игровая локаль, для консоли — английский.
+#
+# Plugin message language: "ru", "en" or "auto".
+settings:
+  language: auto
+
+  # Скорость по умолчанию для новых затоплений (блоков в секунду).
+  # Default rate for new floods (blocks per second).
+  default-rate: 20
+
+  # Максимальная скорость (блоков/сек). Она же — скорость команды reset.
+  # Maximum rate (blocks/s). Also the speed of the reset command.
+  max-rate: 2000
+
+  # Лимит размера отсека (блоков). Если заливка от пробоин находит больше —
+  # сканирование отменяется (скорее всего, корпус не герметичен и вода «утекла» наружу).
+  # Compartment size limit (blocks). If the flood fill finds more, the scan is aborted
+  # (the hull is probably not watertight).
+  max-region-blocks: 150000
+
+  # Сколько миллисекунд за тик можно тратить на сканирование отсека.
+  # Milliseconds per tick that may be spent on scanning.
+  scan-ms-per-tick: 3.0
+
+  # Как часто (сек.) сохранять прогресс затопления на диск.
+  # How often (seconds) the flood progress is saved to disk.
+  autosave-seconds: 30
+
+  # Продолжать затопление/откачку после перезапуска сервера.
+  # Resume flooding/pumping after a server restart.
+  resume-on-start: true

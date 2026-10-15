@@ -1,0 +1,13 @@
+name: FloodPlugin
+version: '${version}'
+
+main: net.dvmn2.floodplugin.FloodPlugin
+api-version: '1.21'
+load: POSTWORLD
+
+authors: [ DVMN2 ]
+
+permissions:
+  flood.admin:
+    description: Доступ к командам /flood
+    default: op
